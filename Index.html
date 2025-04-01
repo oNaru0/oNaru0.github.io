@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculadorDePesoLoL</title>
+</head>
+<body>
+<h1>Evaluar tu peso para saber si puedes seguir jugando League of Legends</h1>
+<p>Introduzca su peso:</p>
+<input type="number" id="peso" placeholder="Ingrese su peso en kg">
+<button onclick="evaluarPeso()">Evaluar</button>
+<p id="resultado"></p>
+<script>
+    function evaluarPeso() {
+        const peso = document.getElementById('peso').value;
+        const resultado = document.getElementById('resultado');
+        if (peso >= 60) {
+            resultado.textContent = "A mover esa puta pansa hijo de tu puta madre, vas a andar de pinche mamerto todo el chingado dia ahi sentadote no mames wey orale cabron hijo de tu puta madre.";
+        } else {
+            resultado.textContent = "Estás bien men, sigue rankeando men.";
+        }
+    }
+</script>
+<img src="https://www.esportmaniacos.com/wp-content/uploads/2022/03/Leage-of-Legends-780x470.webp" alt="League of Legends" style="display: block; margin: 20px auto; max-width: 100%; height: auto;">
+<style>
+    button {
+        display: block;
+        margin: 20px auto;
+        padding: 15px 30px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    body {
+        background-color: #ffffff;
+        font-family: Arial, sans-serif;
+        color: #393c47;
+    }
+    h1 {
+        color: #000000;
+        text-align: center;
+        font-size: 50px;
+    }
+    p {
+        font-size: 30px;
+        line-height: 2.0;
+        text-align: center;
+    }
+    input[type="number"] {
+        display: block;
+        margin: 20px auto;
+        width: 200px;
+        padding: 15px 30px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+</style>
+</body>
+</html>
